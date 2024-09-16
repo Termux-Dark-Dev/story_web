@@ -1,16 +1,47 @@
-# storyweb
 
-A new Flutter project.
+# Story Web -  [app link](https://storyweb.vercel.app)
 
-## Getting Started
+A web app build using flutter to create and listen story through gemini ai and voice rss (text to speech) api.
 
-This project is a starting point for a Flutter application.
+## Run Locally
 
-A few resources to get you started if this is your first Flutter project:
+Clone the project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+  git clone <copy above url>
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Go to the project directory
+
+```bash
+  cd <project-name>
+```
+
+Install dependencies
+
+```bash
+  flutter pub get
+```
+
+Run the web app Locally
+
+```bash
+    flutter run -d chrome --dart-define=GEMINI_API_KEY=your-api-key --dart-define=VOICERSS_API_KEY=your-app-name
+```
+
+Run the android app Locally
+
+```bash
+    flutter run -d <device-name> --dart-define=GEMINI_API_KEY=your-api-key --dart-define=VOICERSS_API_KEY=your-app-name
+```
+
+# Build For Production
+
+```bash
+    flutter build web --dart-define=GEMINI_API_KEY=your-api-key --dart-define=VOICERSS_API_KEY=your-app-name
+```
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/Termux-Dark-Dev/story_web/main/assets/screen1.png)
+
+![App Screenshot](https://raw.githubusercontent.com/Termux-Dark-Dev/story_web/main/assets/screen2.png)
